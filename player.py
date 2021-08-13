@@ -11,9 +11,12 @@ class Player(Turtle):
         self.setheading(90)
         self.penup()
         self.goto(SPAWNPOINT)
-        
+
     
     def walk(self):
-        newy = self.ycor() + 20
+        newy = self.ycor() + 30
         self.goto(0, newy)
         
+        
+    def gotostart(self):
+        self.goto(SPAWNPOINT)
