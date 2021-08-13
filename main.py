@@ -31,6 +31,7 @@ while gameison:
     #detecting colision with cars
     for i in car_manager.cars:
         if player_turtle.distance(i) < 20:
+            score.game_over()
             gameison = False
     
     #detect player won
@@ -38,6 +39,6 @@ while gameison:
         player_turtle.gotostart()
         score.level += 1
         score.changelevel()
-        
+
     
 screen.exitonclick()
